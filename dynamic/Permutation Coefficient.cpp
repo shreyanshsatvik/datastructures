@@ -5,7 +5,6 @@ int permutation_factor(int n,int k)
 {
 	if(k>0)
 	{
-	
 	vector<int> p(k);
 	p[0] = n;
 	
