@@ -16,14 +16,17 @@ public:
         int rc = ans(root->right);
         if(lc==-1 or rc==-1)
         {
+            root->val = 0;
             camera++;
-            return 0;
+            return root->val;
         }
         if(lc==0 or rc==0)
         {
-            return 1;
+            root->val = 1;
+            return root->val;
         }
-        return -1;
+        root->val = -1;
+        return root->val;
     }
         
     int minCameraCover(TreeNode* root) {
