@@ -1,16 +1,5 @@
 class Solution {
-public:
-    string make_string(string s,int start,int end)
-    {
-        string ans = "";
-        for(int i=start;i<=end;i++)
-        {
-            ans += s[i];
-        
-        }
-        return ans;
-    }
-        
+public:    
     string longestPalindrome(string s) {
         int ans =0;
         string str="";
